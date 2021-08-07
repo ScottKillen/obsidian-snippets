@@ -1,0 +1,17 @@
+.workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn,
+.workspace-ribbon:not(:hover) .side-dock-actions,
+.workspace-ribbon:not(:hover) .side-dock-settings {
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in-out;
+}
+.workspace-ribbon:not(:hover) {
+  width: 0px;
+  transition: all 300ms ease-in-out;
+}
+
+.workspace-split.mod-left-split {
+  margin-left: 0px;
+}
+.workspace-split.mod-right-split {
+  margin-right: 0px;
+}

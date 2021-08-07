@@ -1,0 +1,5 @@
+
+.status-bar:not(:hover) .status-bar-item {
+  opacity: 0.3;
+  transition: opacity .25s ease-in-out;
+}

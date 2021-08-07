@@ -1,0 +1,69 @@
+/* ====== Tag Pills ======== */
+.tag:not(.token) {
+	background-color: var(--text-faint);
+	border: none;
+	color: var(--background-primary) !important;
+	font-family: Segoe UI;
+	font-size: 12px;
+	padding: 1px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+	border-radius: 14px;
+}
+.tag:not(.token):hover {
+	background-color: var(--text-muted);
+	color: var(--background-primary) !important;
+}
+
+/* Miscellaneous tags */
+.tag[href^="#journal"]::before {
+	content: "📝";
+}
+.tag[href^="#person"]::before {
+	content: "👤";
+}
+
+/* INDEX tag */
+.tag[href^="#index"]::before {
+	content: "📇";
+}
+.tag[href^="#index"], .tag[href^="#index"]:hover {
+	background-color: rgba(0,0,255,.55);
+	color: var(--text-muted) !important;
+}
+
+/* COMPLETE tag */
+.tag[href^="#complete"] {
+	background-color: rgba(0,255,0,.55);
+}
+.tag[href^="#complete"]:hover {
+	background-color: rgba(0,255,0,.75);
+}
+.tag[href^="#complete"]::before {
+	content: "✔️";
+}
+
+/* IMPORTANT tag */
+.tag[href^="#important"] {
+	background-color: rgba(255,0,0,.55);
+}
+.tag[href^="#important"]:hover {
+	background-color: rgba(255,0,0,.75);
+}
+.tag[href^="#important"]::before {
+	content: "❗";
+}
+
+/* INPROGRESS tag */
+.tag[href^="#inprogress"] {
+	background-color: rgba(255,165,0,.55);
+}
+.tag[href^="#inprogress"]:hover {
+	background-color: rgba(255,165,0,.75);
+}
+.tag[href^="#inprogress"]::before {
+	content: "🚧";
+}
