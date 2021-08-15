@@ -20,13 +20,11 @@ I use these Obsidian community plugins:
 
 - [Admonition](https://github.com/valentine195/obsidian-admonition)
 - [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
-- [AidenLc's Folder note](https://github.com/aidenlx/alx-folder-note)
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
 - [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
 - [Note Refactor](https://github.com/lynchjames/note-refactor-obsidian)
 - [Outliner](https://github.com/vslinko/obsidian-outliner)
-- [QuickAdd](https://github.com/chhoumann/quickadd)
 - [Reading Time](https://github.com/avr/obsidian-reading-time)
 - [Review](https://github.com/ryanjamurphy/review-obsidian)
 - [Sliding Panes (Andy's Mode)](https://github.com/deathau/sliding-panes-obsidian)
