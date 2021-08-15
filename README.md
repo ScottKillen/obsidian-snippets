@@ -22,6 +22,7 @@ I use these Obsidian community plugins:
 - [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
+- [Force note view mode](https://github.com/bwydoogh/obsidian-force-view-mode-of-note)
 - [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
 - [Note Refactor](https://github.com/lynchjames/note-refactor-obsidian)
 - [Outliner](https://github.com/vslinko/obsidian-outliner)
