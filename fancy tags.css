@@ -1,69 +1,99 @@
 /* ====== Tag Pills ======== */
 .tag:not(.token) {
-	background-color: var(--text-faint);
-	border: none;
-	color: var(--background-primary) !important;
-	font-family: Segoe UI;
-	font-size: 12px;
-	padding: 1px 8px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	margin: 0px 0px;
-	cursor: pointer;
-	border-radius: 14px;
+  background: #999;
+  background-image: -webkit-linear-gradient(top, #999, #777);
+  background-image: -moz-linear-gradient(top, #999, #777);
+  background-image: -ms-linear-gradient(top, #999, #777);
+  background-image: -o-linear-gradient(top, #999, #777);
+  background-image: -webkit-gradient(to bottom, #999, #777);
+  border-radius: 6px;
+  color: #222 !important;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-decoration: none !important;
+  text-shadow: 1px 1px rgba (0, 0, 0, 0.85);
+  border: solid #909090 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
 }
+
 .tag:not(.token):hover {
-	background-color: var(--text-muted);
-	color: var(--background-primary) !important;
+	border: solid #909090 1px;
+  background: #777;
+  background-image: -webkit-linear-gradient(top, #777, #999);
+  background-image: -moz-linear-gradient(top, #777, #999);
+  background-image: -ms-linear-gradient(top, #777, #999);
+  background-image: -o-linear-gradient(top, #777, #999);
+  background-image: -webkit-gradient(to bottom, #777, #999);
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-/* Miscellaneous tags */
-.tag[href^="#journal"]::before {
-	content: "📝";
-}
-.tag[href^="#person"]::before {
-	content: "👤";
+.tag:not(.token)::after {
+	color: rgba(0, 0, 0, .5);
+	content: '🔖';
 }
 
-/* INDEX tag */
-.tag[href^="#index"]::before {
-	content: "📇";
+/* TYPE tags */
+
+.tag[href^='#Definition'],
+.tag[href^='#Note'],
+.tag[href^='#DailyNote'],
+.tag[href^='#Person'],
+.tag[href^='#Sermon'] {
+  background: #3d94f6;
+  background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
+  color: #ffffff !important;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-decoration: none !important;
+  text-shadow: 1px 1px #000000;
+  border: solid #337fed 1px;
+  }
+
+.tag[href^='#Definition']::hover,
+.tag[href^='#Note']::hover,
+.tag[href^='#DailyNote']::hover,
+.tag[href^='#Person']:hover,
+.tag[href^='#Sermon']:hover {
+  border: solid #337fed 1px;
+  background: #1e62d0;
+  background-image: -webkit-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -moz-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -ms-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -o-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -webkit-gradient(to bottom, #1e62d0, #3d94f6);
+  border-radius: 6px;
 }
-.tag[href^="#index"], .tag[href^="#index"]:hover {
-	background-color: rgba(0,0,255,.55);
-	color: var(--text-muted) !important;
+.tag[href^='#Sermon']::before {
+  content: '✝️';
 }
 
-/* COMPLETE tag */
-.tag[href^="#complete"] {
-	background-color: rgba(0,255,0,.55);
-}
-.tag[href^="#complete"]:hover {
-	background-color: rgba(0,255,0,.75);
-}
-.tag[href^="#complete"]::before {
-	content: "✔️";
+.tag[href^='#Person']::before {
+  content: '🧑';
 }
 
-/* IMPORTANT tag */
-.tag[href^="#important"] {
-	background-color: rgba(255,0,0,.55);
-}
-.tag[href^="#important"]:hover {
-	background-color: rgba(255,0,0,.75);
-}
-.tag[href^="#important"]::before {
-	content: "❗";
+.tag[href^='#Definition']::before {
+  content: '📖';
 }
 
-/* INPROGRESS tag */
-.tag[href^="#inprogress"] {
-	background-color: rgba(255,165,0,.55);
+.tag[href^='#DailyNote']::before,
+.tag[href^='#Note']::before {
+  content: '📝';
 }
-.tag[href^="#inprogress"]:hover {
-	background-color: rgba(255,165,0,.75);
-}
-.tag[href^="#inprogress"]::before {
-	content: "🚧";
+.tag[href^='#task']::after,
+.tag[href^='#Definition']::after,
+.tag[href^='#Note']::after,
+.tag[href^='#DailyNote']::after,
+.tag[href^='#Person']:after,
+.tag[href^='#Sermon']:after {
+  content: '';
 }
