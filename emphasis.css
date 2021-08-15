@@ -1,0 +1,11 @@
+/* bold in preview and editor */
+strong, .cm-strong {
+  font-weight: 600;
+  color: #ffca80;
+}
+
+/* emphasis in preview and editor */
+em, .cm-em {
+  color: #8aff80;
+  font-style: italic;
+}
