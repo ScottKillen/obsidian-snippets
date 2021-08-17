@@ -1,0 +1,39 @@
+div[data-path="_Inbox"] .nav-folder-title-content::before
+{
+  content: "📥";
+}
+
+div[data-path="Attachments"] .nav-folder-title-content::before
+{
+  content: "📋";
+}
+
+div[data-path="Bible Resources"] .nav-folder-title-content::before
+{
+  content: "⚔️";
+}
+
+div[data-path="Notes"] .nav-folder-title-content::before
+{
+  content: "📝";
+}
+
+div[data-path="Notes/Daily"] .nav-folder-title-content::before
+{
+  content: "📆";
+}
+
+div[data-path="People"] .nav-folder-title-content::before
+{
+  content: "🧑";
+}
+
+div[data-path="Templates"] .nav-folder-title-content::before
+{
+  content: "📐";
+}
+
+div[data-path="Templates/Scripts"] .nav-folder-title-content::before
+{
+  content: "📜";
+}
