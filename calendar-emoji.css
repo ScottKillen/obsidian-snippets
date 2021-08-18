@@ -6,3 +6,8 @@
   height: 8px;
   width: 8px;
 }
+
+.frontmatter-section-tags .tag[href^='#flagged'],
+.frontmatter-section-tags .tag[href^='#🎂'] {
+  display: none !important;
+}
