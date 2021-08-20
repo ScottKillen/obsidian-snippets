@@ -1,62 +1,10 @@
 /* ====== Fancy Tags ======== */
-.frontmatter-section-tags .tag:not(.token) {
-  background: #999;
-  background-image: -webkit-linear-gradient(top, #999, #777);
-  border-radius: 6px;
-  color: #222 !important;
-  -webkit-box-shadow: 1px 1px 20px 0 #000000;
-   box-shadow: 1px 1px 20px 0 #000000;
-  text-decoration: none !important;
-  text-shadow: 1px 1px rgba (0, 0, 0, 0.85);
-  border: solid #909090 1px;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  font-style: normal;
-}
-
-.frontmatter-section-tags .tag:not(.token):hover {
-	border: solid #909090 1px;
-  background: #777;
-  background-image: -webkit-linear-gradient(top, #777, #999);
-  border-radius: 6px;
-  text-decoration: none;
-}
 
 .frontmatter-section-tags .tag:not(.token)::after {
-	color: rgba(0, 0, 0, .5);
 	content: '🔖';
 }
 
 /* TYPE tags */
-
-.frontmatter-section-tags .tag[href^='#Article'],
-.frontmatter-section-tags .tag[href^='#DailyNote'],
-.frontmatter-section-tags .tag[href^='#Definition'],
-.frontmatter-section-tags .tag[href^='#Note'],
-.frontmatter-section-tags .tag[href^='#Person'],
-.frontmatter-section-tags .tag[href^='#Sermon'] {
-  background: #3d94f6;
-  background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
-  color: #ffffff !important;
-  -webkit-box-shadow: 1px 1px 20px 0 #000000;
-  box-shadow: 1px 1px 20px 0 #000000;
-  text-decoration: none !important;
-  text-shadow: 1px 1px #000000;
-  border: solid #337fed 1px;
-  }
-
-.frontmatter-section-tags .tag[href^='#Article']:hover,
-.frontmatter-section-tags .tag[href^='#DailyNote']:hover,
-.frontmatter-section-tags .tag[href^='#Definition']:hover,
-.frontmatter-section-tags .tag[href^='#Note']:hover,
-.frontmatter-section-tags .tag[href^='#Person']:hover,
-.frontmatter-section-tags .tag[href^='#Sermon']:hover {
-  border: solid #337fed 1px;
-  background: #1e62d0;
-  background-image: -webkit-linear-gradient(top, #1e62d0, #3d94f6);
-  border-radius: 6px;
-}
 
 .frontmatter-section-tags .tag:not(.token)::before {
   text-shadow: none !important;

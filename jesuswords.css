@@ -1,4 +1,9 @@
 i.jesuswords {
   font-style: normal;
-  color: #dc006d;
+  color: var(--red);
+}
+
+.admonition-content .internal-embed .markdown-embed {
+  padding: 0;
+  border-width: 0;
 }

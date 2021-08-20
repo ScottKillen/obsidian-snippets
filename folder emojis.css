@@ -1,3 +1,7 @@
+div .nav-folder-title-content::before {
+  color: rgba(255,255,255,0.5);
+}
+
 div[data-path="_Inbox"] .nav-folder-title-content::before
 {
   content: "📥";

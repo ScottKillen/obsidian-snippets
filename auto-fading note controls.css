@@ -1,5 +1,0 @@
-
-.view-header:not(:hover) .view-action {
-  opacity: 0.3;
-  transition: opacity .25s ease-in-out;
-}
