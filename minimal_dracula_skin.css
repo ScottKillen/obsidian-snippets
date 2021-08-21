@@ -86,6 +86,7 @@ Elements
     --pink: #Ff80BF;
     --blue: #8095ff;
     --yellow: #ffff80;
+    --text-on-accent-warning: #000;
   }
 
 /*----------------------------------------------------------------
@@ -127,6 +128,7 @@ Elements
     --text-highlight-bg: var(--blue);
     --text-highlight-bg-active:rgba(255, 255, 255, 0.1);
     --background-modifier-cover:hsla(var(--base-h),var(--base-s),calc(var(--base-d) - 12%),0.8);
+
     --background-accent: var(--white);
     --background-modifier-form-field: rgba(0, 0, 0, 0.2);
     --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
@@ -660,3 +662,13 @@ s, del, .cm-strikethrough {
 .token.namespace {
   color: var(--red);
   }
+/* Warnings */
+
+button.mod-warning {
+
+}
+
+button.mod-warning {
+  background-color: var(--background-modifier-error);
+  color: var(--text-on-accent-warning);
+}
