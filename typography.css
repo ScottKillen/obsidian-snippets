@@ -1,0 +1,11 @@
+/* TYPOGRAPHY */
+.subtle {
+  color: var(--h6);
+  letter-spacing: 0.02em;
+  font-weight: var(--h6-weight);
+  font-size: var(--h6);
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
