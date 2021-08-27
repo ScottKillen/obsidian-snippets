@@ -1,0 +1,13 @@
+.bible.markdown-preview-view h6 {
+  position: relative;
+  left: -5%;
+  top: 26px;
+  line-height: 0px;
+  margin-top: -20px;
+  margin-right: 3px;
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--text-faint) !important;
+}
