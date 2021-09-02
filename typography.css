@@ -9,3 +9,7 @@
 .small-caps {
   font-variant: small-caps;
 }
+
+.embedded-note-titles .markdown-preview-view.daily-note > h1::before {
+  content: "📆 ";
+}
