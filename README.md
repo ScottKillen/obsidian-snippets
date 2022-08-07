@@ -14,7 +14,7 @@
 
 <!-- PLUGINS -->
 
-My Obsidian theme is [Minimal](https://github.com/kepano/obsidian-minimal) by [kepano](https://github.com/kepano). I use the Obsidian Style Settings plugin to customize my colors to the [Penumbra](https://github.com/nealmckee/penumbra) palette.
+My Obsidian theme is [Minimal](https://github.com/kepano/obsidian-minimal) by [kepano](https://github.com/kepano). I use the Obsidian Style Settings plugin to customize my colors to the [Penumbra Color Theme](https://github.com/nealmckee/penumbra) palette.
 
 <!-- LICENSE -->
 ## License
