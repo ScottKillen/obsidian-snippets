@@ -8,31 +8,13 @@
   <h3 align="center">Obsidian Snippets</h3>
 
   <p align="center">
-    A collection of css tweaks for my [Obsidian](https://obsidian.md/) set up.
+    A collection of css tweaks for my <a href="https://obsidian.md/">Obsidian</a> set up.
   </p>
 </p>
 
 <!-- PLUGINS -->
 
-My Obsidian theme is a customized version of [Dracula's Obsidian theme](https://github.com/dracula/obsidian). My theme uses the Van Helsing palette from [Dracula Pro](https://draculatheme.com/pro). Sorry, I can't share it!
-
-I use these Obsidian community plugins:
-
-- [Admonition](https://github.com/valentine195/obsidian-admonition)
-- [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
-- [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
-- [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
-- [Force note view mode](https://github.com/bwydoogh/obsidian-force-view-mode-of-note)
-- [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
-- [Note Refactor](https://github.com/lynchjames/note-refactor-obsidian)
-- [Outliner](https://github.com/vslinko/obsidian-outliner)
-- [Reading Time](https://github.com/avr/obsidian-reading-time)
-- [Review](https://github.com/ryanjamurphy/review-obsidian)
-- [Sliding Panes (Andy's Mode)](https://github.com/deathau/sliding-panes-obsidian)
-- [Table of Contents](https://github.com/hipstersmoothie/obsidian-plugin-toc)
-- [Tag Wrangler](https://github.com/pjeby/tag-wrangler)
-- [Tasks](https://github.com/schemar/obsidian-tasks)
-- [Templater](https://github.com/SilentVoid13/Templater)
+My Obsidian theme is [Minimal](https://github.com/kepano/obsidian-minimal) by [kepano](https://github.com/kepano). I use the Obsidian Style Settings plugin to customize my colors to the [Penumbra](https://github.com/nealmckee/penumbra) palette.
 
 <!-- LICENSE -->
 ## License

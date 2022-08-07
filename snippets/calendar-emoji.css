@@ -8,6 +8,8 @@
 }
 
 .frontmatter-section-tags .tag[href^='#flagged'],
-.frontmatter-section-tags .tag[href^='#🎂'] {
+.frontmatter-section-tags .tag[href^='#🎂'],
+.frontmatter-section-tags .tag[href^='#🦃'],
+.frontmatter-section-tags .tag[href^='#🌴'] {
   display: none !important;
 }
