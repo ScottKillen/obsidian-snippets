@@ -1,7 +1,7 @@
 
 .jesuswords,
 .jesuswords em {
-  color: var(--red) !important;
+  color: var(--color-red) !important;
 }
 
 .admonition-content .internal-embed .markdown-embed {

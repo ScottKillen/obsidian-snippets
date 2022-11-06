@@ -1,0 +1,53 @@
+/*****************************************
+Highlighters
+*******************************************/
+
+mark {
+  font-size: 1em;
+  color: var(--normal-text) !important;
+  background: none !important;
+  border-radius: 4px;
+  border-bottom: 3px solid;
+}
+
+/*Add highlighter's label before highlighted text*/
+mark::before {
+  padding: 0 5px;
+  text-transform: lowercase;
+  font-style: italic;
+  font-family: Operator;
+}
+
+/*Red highlighter (edit)*/
+mark.edit::before {
+  content: 'To edit:';
+  color: var(--color-red);
+}
+mark.edit {
+  border-bottom-color: var(--color-red);
+}
+
+mark.yellow {
+  border-bottom-color: var(--color-yellow);
+}
+mark.pink {
+  border-bottom-color: var(--color-pink);
+}
+mark.red {
+  border-bottom-color: var(--color-red);
+}
+mark.blue {
+  border-bottom-color: var(--color-blue);
+}
+mark.green {
+  border-bottom-color: var(--color-green);
+}
+mark.purple {
+  border-bottom-color: var(--color-purple);
+}
+mark.orange {
+  border-bottom-color: var(--color-orange);
+}
+mark.grey {
+  border-bottom-color: var(--text-normal);
+}
