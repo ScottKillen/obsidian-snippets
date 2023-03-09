@@ -1,3 +1,7 @@
+/* Obsidian snippet to render a star on the calendar when a daily note
+ * has #flagged as its first tag
+ */
+
 #calendar-container [data-tags~="flagged"] {
   color: var(--text-error)
 }
@@ -15,3 +19,6 @@
   width: 8px;
 }
 
+.frontmatter-section-tags .tag[href^='#flagged'] {
+  display: none !important;
+}

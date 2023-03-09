@@ -1,0 +1,5 @@
+/* Obsidian snippet to alter the contrast of the resize handle */
+
+.workspace-leaf-resize-handle {
+  border-bottom-color: rgba(0,0,0,75%);
+}

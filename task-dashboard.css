@@ -1,0 +1,47 @@
+/* Tasks Panel */
+
+/* Obsidian snippet to style a note used as a sidebar panel
+ *
+ * To use, add 'cssclasses: task-dashboard' to note's frontmatter.
+ *
+ * This snippet only has any effect when the note appears as a pane on
+ * the right-hand toolbar.
+ */
+
+.mod-right-split .markdown-preview-view.markdown-rendered.task-dashboard {
+  padding-top: 0;
+}
+
+.mod-right-split .markdown-preview-view.markdown-rendered.task-dashboard h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.125em;
+  font-weight:500
+}
+
+.mod-right-split .markdown-preview-view.markdown-rendered.task-dashboard h2 {
+  margin-block-start: .25em;
+  margin-bottom:0;
+  font-size: 1em;
+  font-weight:500
+}
+
+.contextual-typography .markdown-preview-view.is-readable-line-width.task-dashboard .markdown-preview-sizer>div
+{
+  --max-width: 100%
+}
+
+.workspace-tab-header[aria-label="Dashboard - Tasks"] .workspace-tab-header-inner-icon {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23879a09' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='2' width='8' height='4' rx='1' ry='1'%3E%3C/rect%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'%3E%3C/path%3E%3Cpath d='M12 11h4'%3E%3C/path%3E%3Cpath d='M12 16h4'%3E%3C/path%3E%3Cpath d='M8 11h.01'%3E%3C/path%3E%3Cpath d='M8 16h.01'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 18px 18px;
+}
+
+.workspace-tab-header[aria-label="Dashboard - Tasks"] .workspace-tab-header-status-container,
+.workspace-tab-header[aria-label="Dashboard - Tasks"] .workspace-tab-header-inner-icon svg {
+  display: none;
+}

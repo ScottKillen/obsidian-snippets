@@ -1,0 +1,6 @@
+/* Obsidian snippet to change tags to render with the monospace font */
+
+a[class="tag"] {
+  font-weight: bold;
+  font-family: var(--font-monospace)
+}

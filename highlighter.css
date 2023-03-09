@@ -10,7 +10,7 @@ mark {
   border-bottom: 3px solid;
 }
 
-/*Add highlighter's label before highlighted text*/
+/* Add highlighter's label before highlighted text */
 mark::before {
   padding: 0 5px;
   text-transform: lowercase;
@@ -18,7 +18,8 @@ mark::before {
   font-family: Operator;
 }
 
-/*Red highlighter (edit)*/
+/* Red highlighter (edit) */
+/* <mark class="edit">Text</mark> */
 mark.edit::before {
   content: 'To edit:';
   color: var(--color-red);
@@ -27,27 +28,35 @@ mark.edit {
   border-bottom-color: var(--color-red);
 }
 
+/* <mark class="yelloe">Text</mark> */
 mark.yellow {
   border-bottom-color: var(--color-yellow);
 }
+/* <mark class="pink">Text</mark> */
 mark.pink {
   border-bottom-color: var(--color-pink);
 }
+/* <mark class="red">Text</mark> */
 mark.red {
   border-bottom-color: var(--color-red);
 }
+/* <mark class="blue">Text</mark> */
 mark.blue {
   border-bottom-color: var(--color-blue);
 }
+/* <mark class="green">Text</mark> */
 mark.green {
   border-bottom-color: var(--color-green);
 }
+/* <mark class="purple">Text</mark> */
 mark.purple {
   border-bottom-color: var(--color-purple);
 }
+/* <mark class="orange">Text</mark> */
 mark.orange {
   border-bottom-color: var(--color-orange);
 }
+/* <mark class="grey">Text</mark> */
 mark.grey {
   border-bottom-color: var(--text-normal);
 }

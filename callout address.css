@@ -1,0 +1,11 @@
+/* Obsidian snippet to create a custom 'address' callout
+ *
+ * Usage in markdown:
+ * > [!address]
+ * > 123 Main St.
+ * > Anytown, SC 29407
+ */
+
+.callout[data-callout="address"] {
+  --callout-icon: lucide-home
+}

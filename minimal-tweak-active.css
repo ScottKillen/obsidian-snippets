@@ -1,0 +1,16 @@
+/* Obsidian snippet add drop shadows to text in actoive elements */
+
+#calendar-container .active,
+.flair.mod-pop,
+.horizontal-tab-nav-item.is-active,
+.linter-navigation-item-selected,
+.nav-file-title.is-active,
+.vertical-tab-nav-item.is-active,
+.community-item.is-selected,
+.mod-cta {
+  text-shadow: 1px 1px 1px black;
+}
+
+.community-item-downloads svg {
+  filter: drop-shadow(1px 1px 1px black);
+}

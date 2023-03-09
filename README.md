@@ -16,6 +16,8 @@
 
 My Obsidian theme is [Minimal](https://github.com/kepano/obsidian-minimal) by [kepano](https://github.com/kepano).
 
+I also highly recommend the [Modular CSS Layout for Obsidian](https://github.com/efemkay/obsidian-modular-css-layout) snippets.
+
 <!-- LICENSE -->
 ## License
 

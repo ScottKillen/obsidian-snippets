@@ -1,0 +1,13 @@
+/* Obsidian snippet to change the kanban plugin's rendering of certain tags */
+
+.kanban-plugin .kanban-plugin__meta-key span {
+  font-variant: small-caps
+}
+
+.kanban-plugin [data-key="promised"] span {
+  color: var(--color-yellow)
+}
+
+.kanban-plugin [data-key="waiting"] span {
+  color: var(--color-red)
+}

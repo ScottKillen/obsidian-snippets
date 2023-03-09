@@ -1,0 +1,4 @@
+/* Obsidian snippet to change style of strikethru on cancelled tasks */
+body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked, body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]), body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+    text-decoration: line-through dotted var(--text-faint) 2px;
+}

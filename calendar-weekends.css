@@ -1,3 +1,6 @@
+/* Obsidian snippet to change the background color of weekends on the calendar
+ */
+
 #calendar-container {
   --color-background-weekend: #19242b
 }

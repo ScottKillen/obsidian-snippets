@@ -1,0 +1,13 @@
+/* Obsidian snippet to create a custom 'activity-log' callout
+ *
+ * Usage in markdown:
+ * > [!activity-log] Activity Log
+ * > - I came.
+ * > - I saw.
+ * > - I conquered.
+ */
+
+.callout[data-callout="activity-log"] {
+  --callout-color: var(--color-orange-rgb);
+  --callout-icon: lucide-clipboard-list
+}

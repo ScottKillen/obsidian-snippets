@@ -1,0 +1,49 @@
+/* Dangling Links Panel */
+
+/* Obsidian snippet to style a note used as a sidebar panel
+ *
+ * To use, add 'cssclasses: dangle-dashboard' to note's frontmatter.
+ *
+ * This snippet only has any effect when the note appears as a pane on
+ * the right-hand toolbar.
+ */
+
+
+
+/* Remove extra whitespace */
+.mod-right-split .markdown-preview-view.markdown-rendered.dangle-dashboard {
+  padding-top: 0;
+}
+
+.mod-right-split .markdown-preview-view.markdown-rendered.dangle-dashboard h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.mod-right-split .markdown-preview-view.markdown-rendered.dangle-dashboard ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Expand lines to full width (requires Contextual Typography plugin) */
+.contextual-typography .markdown-preview-view.is-readable-line-width.dangle-dashboard .markdown-preview-sizer>div
+{
+  --max-width: 100%
+}
+
+/* Add a custom icon to the tab */
+.workspace-tab-header[aria-label="Dashboard - Dangling Links"] .workspace-tab-header-inner-icon {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23879a09' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18.84 12.25 1.72-1.71h-.02a5.004 5.004 0 0 0-.12-7.07 5.006 5.006 0 0 0-6.95 0l-1.72 1.71'%3E%3C/path%3E%3Cpath d='m5.17 11.75-1.71 1.71a5.004 5.004 0 0 0 .12 7.07 5.006 5.006 0 0 0 6.95 0l1.71-1.71'%3E%3C/path%3E%3Cline x1='8' y1='2' x2='8' y2='5'%3E%3C/line%3E%3Cline x1='2' y1='8' x2='5' y2='8'%3E%3C/line%3E%3Cline x1='16' y1='19' x2='16' y2='22'%3E%3C/line%3E%3Cline x1='19' y1='16' x2='22' y2='16'%3E%3C/line%3E%3C/svg%3E");
+  background-size: 18px 18px;
+}
+
+/* Remove the pin and the native file icon */
+.workspace-tab-header[aria-label="Dashboard - Dangling Links"] .workspace-tab-header-status-container,
+.workspace-tab-header[aria-label="Dashboard - Dangling Links"] .workspace-tab-header-inner-icon svg {
+  display: none;
+}

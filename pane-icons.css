@@ -1,0 +1,27 @@
+/* Obsidian snippet to change the tab icons for certain notes used as sidebar panels */
+
+.workspace-tab-header[aria-label="QuickInfo"] .workspace-tab-header-inner-icon {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23879a09' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='16' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='8' x2='12.01' y2='8'%3E%3C/line%3E%3C/svg%3E");
+  background-size: 18px 18px;
+}
+.workspace-tab-header[aria-label="QuickContacts"] .workspace-tab-header-inner-icon {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23879a09' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+  background-size: 18px 18px;
+}
+
+.workspace-tab-header[aria-label="QuickContacts"] .workspace-tab-header-status-container,
+.workspace-tab-header[aria-label="QuickContacts"] .workspace-tab-header-inner-icon svg,
+.workspace-tab-header[aria-label="QuickInfo"] .workspace-tab-header-status-container,
+.workspace-tab-header[aria-label="QuickInfo"] .workspace-tab-header-inner-icon svg {
+  display: none;
+}

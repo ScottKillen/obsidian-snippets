@@ -1,0 +1,12 @@
+/* Obsidian snippet to create a custom 'due-today' callout
+ *
+ * Usage in markdown:
+ * > [!due-later]+ Due Today
+ * > - [ ] Do this today
+ * > - [ ] Do this tonight
+ */
+
+.callout[data-callout="due-today"] {
+  --callout-color: var(--color-red-rgb);
+  --callout-icon: lucide-calendar-days
+}

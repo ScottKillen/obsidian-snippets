@@ -1,0 +1,9 @@
+/* Onsidian snippet to recolor the icons on the right-hand sidebar. */
+
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--frame-icon-color);
+}
+
+.mod-right-split {
+  --background-modifier-hover: #3b4401;
+}

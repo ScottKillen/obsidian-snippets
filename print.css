@@ -1,181 +1,199 @@
+/* Obsidian snippet to style output of pdf exports */
+
 @media print {
 
-  /* Setting content width, unsetting floats and margins */
-  .markdown-preview-view {
-    width: 100%;
-    margin: 0;
-    float: none;
+  /* set your preferred fonts here. */
+
+  :root {
+    --body-font-family: "Newsreader Text", TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    --header-font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    --code-font-family: MonoLisa, Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   }
 
-  /* Set margins */
-  @page {
-    margin: 1in;
-  }
-
-  /* Fonts */
   body {
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    line-height: 1.3;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.4;
+    word-spacing: 1.1pt;
+    letter-spacing: 0.2pt;
+    font-family: var(--body-font-family);
+    background: none;
+    font-size: 12pt
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: var(--header-font-family);
+    font-weight: normal !important
   }
 
-  th {
-    font-weight: bold !important;
+  h1 {
+    font-size: 19pt !important
   }
 
-  /* Colors */
-  body, th, em, strong, del, h1, h2, h3, h4, h5, pre, code, .token,
-  .markdown-preview-view ul>li.task-list-item.is-checked,
-  ol>li::marker, ul>li::marker, blockquote, .admonition {
-    background: white !important;
+  h2 {
+    font-size: 17pt !important
+  }
+
+  h3 {
+    font-size: 15pt !important
+  }
+
+  h4, h5, h6 {
+    font-size: 12pt !important
+  }
+
+  code, code[class*="language-"],
+  pre, pre[class*="language-"] {
+    font-size: 10pt;
+    font-family: var(--code-font-family);
     color: black !important;
+    background: none !important;
   }
 
-  .admonition {
-    border-left: none !important;
-    box-shadow: none !important;
+  pre,
+  code span,
+  code {
+    color: black !important
   }
 
-  .admonition-title-icon {
-    color: gray !important;
+  code {
+    border: 1px solid darkgray !important;
+    padding: 0 0.2em !important;
+    line-height: initial !important;
+    border-radius: 4px !important
   }
 
-  del {
-    color: slategray !important;
+  pre {
+    border: 1px solid darkgray !important;
+    margin: 1em 0px !important;
+    padding: 0.5em !important;
+    border-radius: 4px !important
   }
 
-  h6 {
-    background: white !important;
-    color: darkslategray !important;
+  pre > code {
+    font-size: 12px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-radius: 4px !important
+  }
+
+  blockquote {
+    margin: 1.3em;
+    padding: 1em;
+    font-size: 10pt;
+    color: darkslategray !important
   }
 
   hr {
-    border-color:gray !important;
-  }
-
-/* Tables */
-
-  table, thead, th, tbody, td {
-    border: none !important;
-  }
-
-  tr {
-    border-bottom: lightgray dotted 1px;
-    color: black !important;
-  }
-
-  tr:nth-child(odd){
-    background: white;
-  }
-
-  tr:nth-child(even){
-    background: gainsboro;
-  }
-
-  /* Page Breaks */
-  a {
-    page-break-inside:avoid;
-  }
-
-  blockquote, .admonition {
-    page-break-inside: avoid;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    page-break-after:avoid;
-    page-break-inside:avoid;
+    background-color: #ccc
   }
 
   img {
-    page-break-inside:avoid;
-    page-break-after:avoid;
+    display:block;
+    margin: 1em 0
   }
 
-  table, pre {
-    page-break-inside:avoid;
+  a img {
+    border: none
   }
 
-  ul, ol, dl, div.math-block {
-    page-break-before:avoid;
+  table {
+    margin: 1px;
+    text-align: left
   }
 
-  /* Displaying link color and link behaviour */
-  a:link, a:visited, a {
-    background: transparent;
-    color: black;
-    text-decoration: underline;
-    text-align: left;
+  th {
+    border-bottom: 1px aolis #333
   }
 
-  a[href^=http]:after {
-    content:" < " attr(href) "> ";
+  td {
+    border-bottom: 1px solid #333
   }
 
-  a:after > img {
-    content: "";
+  th,td, tr {
+    padding: 4px 10px 4px 0;
+    color: black !important;
+    background: none !important
   }
 
-  article a[href^="#"]:after {
-    content: "";
+  tfoot {
+    font-style: italic
   }
 
-  a.external-link::after {
-    content:" <" attr(href) "> ";
-    font-style:italic;
-    font-size: 0.9em;
+  caption {
+    background: #fff;
+    margin-bottom: 2em;
+    text-align: left
   }
 
-  /**
-  * Making intergated videos disappear, and removing the iframes' whitespace to zero.
-  */
-
-  .entry iframe, ins {
-      display: none;
-      width: 0 !important;
-      height: 0 !important;
-      overflow: hidden !important;
-      line-height: 0pt !important;
-      white-space: nowrap;
-    }
-
-  .embed-youtube, .embed-responsive {
-    position: absolute;
-    height: 0;
-    overflow: hidden;
+  thead {
+    display: table-header-group
   }
 
-  /* Hide unnecessary Elements */
-
-  body.minimal-rel-preview:not(.ig-lists-preview) .markdown-preview-view ul ul,
-  body.minimal-rel-preview:not(.ig-lists-preview) .markdown-preview-view ol ul,
-  body.minimal-rel-preview:not(.ig-lists-preview) .markdown-preview-view ul ol,
-  body.minimal-rel-preview:not(.ig-lists-preview) .markdown-preview-view ol ol {
-    border: none;
+  tr {
+    page-break-inside: avoid
   }
 
-  .task-list-item a[href="#task"] {
-    display: none;
+  a {
+    text-decoration: none;
+    color: black !important
   }
 
-  /* Hide scrollbars */
-  ::-webkit-scrollbar {
-    display:none;
+
+  a[aria-label]::after {
+    display: inline !important;
+    content: " (" attr(aria-label) ")" !important;
+    color: slategray !important;
+    font-size: 70% !important;
   }
 
-  /* Type Rhythm */
-  p + p {
-    text-indent: 1em;
+  a[class="tag"] {
+    font-weight: bold;
+    font-family: var(--font-monospace);
+    background: none
   }
 
-  p {
-      margin: 0 auto;
+  .callout {
+    background: none;
+    border-width: 1px;
+    border-color: rgba(var(--callout-color), 0.75)
   }
 
-  dl + p, ol + p, ul + p, div.math-block {
-      margin-top: 2.8rem;
+  /* -=-=-=-=-=-=- */
+  /* Specific to custom checkboxes in @kepano's minimal theme */
+  li[data-task="/"]>input:checked::after,
+  input[type=checkbox]:checked::after {
+    background-color: black
   }
+
+  input[type=checkbox]:checked {
+    background: none
+  }
+
+  ul>li.task-list-item[data-task="x"] {
+    color: black
+  }
+
+  li[data-task="!"]>input:checked::after,
+  li[data-task="*"]>input:checked::after,
+  li[data-task='"']>input:checked::after,
+  li[data-task="l"]>input:checked::after,
+  li[data-task="b"]>input:checked::after,
+  li[data-task="i"]>input:checked::after,
+  li[data-task="S"]>input:checked::after,
+  li[data-task="I"]>input:checked::after,
+  li[data-task="p"]>input:checked::after,
+  li[data-task="c"]>input:checked::after,
+  li[data-task="f"]>input:checked::after,
+  li[data-task="k"]>input:checked::after,
+  li[data-task="w"]>input:checked::after,
+  li[data-task="u"]>input:checked::after,
+  li[data-task="d"]>input:checked::after,
+  li[data-task="?"]>input:checked::after {
+    background: none !important;
+    -webkit-mask-image: none !important
+  }
+  /* -=-=-=-=-=-=- */
 
 }

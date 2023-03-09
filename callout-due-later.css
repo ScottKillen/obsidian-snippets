@@ -1,0 +1,12 @@
+/* Obsidian snippet to create a custom 'due-later' callout
+ *
+ * Usage in markdown:
+ * > [!due-later]+ Due Later
+ * > - [ ] Do this tomorrow
+ * > - [ ] Do this next week
+ */
+
+.callout[data-callout="due-later"] {
+  --callout-color: var(--color-yellow-rgb);
+  --callout-icon: lucide-calendar-clock
+}

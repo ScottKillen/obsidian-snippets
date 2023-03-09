@@ -1,9 +1,5 @@
-/* Editor line numbers */
-.cm-gutterElement {
-  font-family: var(--font-monospace)
-}
+/* Obsidian snippet to change several items to use the UI font. */
 
-/* UI Elements */
 .view-header-title, .popover-title,
 .workspace>.workspace-split:not(.mod-root) .CodeMirror,
 .workspace>.workspace-split:not(.mod-root) .cm-scroller,
@@ -17,28 +13,6 @@
     font-family: var(--font-interface)
 }
 
-/* Tables */
-.table-sans td {
-  font-family: 'Clear Sans', Calibri, 'Trebuchet MS', sans-serif
-}
-
-/* tags*/
-.cm-hashtag {
-  font-weight:bold;
-  font-family: var(--font-monospace)
-}
-
-.contextual-typography .markdown-preview-view.is-readable-line-width.task-dashboard .markdown-preview-sizer>div
-{
-  --max-width: 100%
-}
-
-.calendar .day.today,
-.flair.mod-pop,
-.horizontal-tab-nav-item.is-active,
-.linter-navigation-item-selected,
-.nav-file-title.is-active,
-.vertical-tab-nav-item.is-active,
-.mod-cta {
-  text-shadow: 1px 1px 1px black;
+.is-selected .community-item-name .flair.mod-pop {
+    background-color: var(--background-primary);
 }

@@ -1,0 +1,11 @@
+/* Obsidian snippet to change how table are rendered */
+
+/* use sans font */
+.table-sans td {
+  font-family: 'Clear Sans', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* lighten alternate row background */
+.markdown-rendered tbody tr:nth-child(odd) {
+  background-color: #2a3a3a80
+}

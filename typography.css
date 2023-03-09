@@ -1,5 +1,6 @@
 /* TYPOGRAPHY */
 
+/* <span class="subtle">Text</span> */
 .subtle {
   color: var(--h6);
   letter-spacing: 0.02em;
@@ -7,44 +8,52 @@
   font-size: var(--h6);
 }
 
+/* <span class="small-caps">Text</span> */
 .small-caps {
   font-variant: small-caps;
 }
 
 /* Colors */
 
+/* <span class="red">Text</span> */
 .red {
   color: var(--color-red)
 }
 
+/* <span class="orange">Text</span> */
 .orange {
   color: var(--color-orange)
 }
 
+/* <span class="yellow">Text</span> */
 .yellow {
   color: var(--color-yellow)
 }
 
+/* <span class="green">Text</span> */
 .green {
   color: var(--color-green)
 }
 
+/* <span class="cyan">Text</span> */
 .cyan {
   color: var(--color-cyan)
 }
 
+/* <span class="blue">Text</span> */
 .blue {
   color: var(--color-blue)
 }
 
+/* <span class="purple">Text</span> */
 .purple {
   color: var(--color-purple)
 }
 
+/* <span class="pink">Text</span> */
 .pink {
   color: var(--color-pink)
 }
-
 
 /* Callout header font */
 .callout-title-inner {

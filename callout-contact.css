@@ -1,0 +1,12 @@
+/* Obsidian snippet to create a custom 'contact' callout
+ *
+ * Usage in markdown:
+ * > [!contact]
+ * > ## John Smith
+ * > - not.really@his.email
+ * > - (123) 123-45678
+ */
+
+.callout[data-callout="contact"] {
+  --callout-icon: lucide-at-sign
+}
