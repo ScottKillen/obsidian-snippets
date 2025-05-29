@@ -1,0 +1,67 @@
+/* Move vault profile to the top of the side bar */
+/* From [the minimal theme](https://github.com/kepano/obsidian-minimal) by kepano */
+
+body:not(.is-grabbing):not(.is-fullscreen).labeled-nav.is-hidden-frameless
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header-container {
+  -webkit-app-region: no-drag;
+}
+body:not(.is-grabbing):not(.is-fullscreen).labeled-nav.is-hidden-frameless
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header-container:before {
+  position: absolute;
+  top: 0;
+  content: '';
+  height: var(--header-height);
+  width: 100%;
+  -webkit-app-region: drag;
+}
+
+body:not(.is-mobile):not(.labeled-nav)
+  .workspace-split.mod-left-split
+  .mod-top
+  .workspace-tab-container {
+  margin-top: calc(var(--header-height) + 8px);
+}
+body:not(.is-mobile):not(.labeled-nav)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  top: var(--header-height);
+  z-index: 6;
+  width: 100%;
+  border-top: 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+body:not(.is-mobile):not(.labeled-nav)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher {
+  padding-left: var(--size-4-2);
+}
+
+body:not(.is-mobile).labeled-nav
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  top: var(--labeled-nav-top-margin);
+  z-index: 6;
+  width: 100%;
+  background-color: transparent;
+  border-top: 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+body:not(.is-mobile).labeled-nav
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher {
+  padding-left: var(--size-4-2);
+}
+
+.workspace-tab-header-container-inner {
+  --labeled-nav-top-margin: 84px;
+}
